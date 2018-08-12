@@ -20,7 +20,7 @@
 
 #### Пример:
 
-![N|Solid](https://cloclo22.datacloudmail.ru/weblink/view/sPjj/BBHSJn8gp?etag=47CE23A3160638F6102CB532B913023E21FE630A&key=0cf8503e4c9508a2caf715051f75ac0da80de256)
+![Пример](//additionally/test_img.png)
 
 - Для задачи 1, результат должен быть равен X2
 - Для задачи 2, результат должен быть равен [X1, X2]
