@@ -2,18 +2,19 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 
 /**
- *
+ * Test class IntersectionsProcessingTest.
  */
 public class IntersectionsProcessingTest {
 
     /**
-     *
+     * Test method getListIntersections.
      */
     @Test
-    public void getListIntersections() {
+    public final void getListIntersections() {
         ArrayList<String> arrayList = new ArrayList<String>();
         arrayList.add("[3, 20]");
         arrayList.add("(-∞, 5] U [16, +∞)");
@@ -23,10 +24,10 @@ public class IntersectionsProcessingTest {
     }
 
     /**
-     *
+     * Test method getNearestNumberInIntersection.
      */
     @Test
-    public void getNearestNumberInIntersection() {
+    public final void getNearestNumberInIntersection() {
         ArrayList<String> arrayList = new ArrayList<String>();
         arrayList.add("[3, 5]");
         int testNumber1 = 5;

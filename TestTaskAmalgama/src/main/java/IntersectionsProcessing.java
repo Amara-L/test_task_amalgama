@@ -25,8 +25,8 @@ public class IntersectionsProcessing {
      * @param arrayListIntervals list of specified intervals
      * @return intersection intervals
      */
-    public ArrayList<String> getListIntersections(
-            ArrayList<String> arrayListIntervals) {
+    public final ArrayList<String> getListIntersections(
+            final ArrayList<String> arrayListIntervals) {
 
         String intersections = arrayListIntervals.get(0);
 
@@ -47,8 +47,10 @@ public class IntersectionsProcessing {
      * @param intervals     intervals for comparison
      * @return string intersections
      */
-    public String searchIntersectionsIntervals(ArrayList<String> intersections,
-                                               ArrayList<String> intervals) {
+    public final String searchIntersectionsIntervals(
+            final ArrayList<String> intersections,
+            final ArrayList<String> intervals) {
+
         String intersectionsIntervals = "";
 
         for (String intersection : intersections) {
@@ -80,7 +82,9 @@ public class IntersectionsProcessing {
                     if (Integer.parseInt(intersectionX)
                             > Integer.parseInt(intervalX)) {
                         checkString += "[" + intersectionX;
-                    } else checkString += "[" + intervalX;
+                    } else {
+                        checkString += "[" + intervalX;
+                    }
                 }
 
                 checkString += ", ";
@@ -100,7 +104,9 @@ public class IntersectionsProcessing {
                     if (Integer.parseInt(intersectionY)
                             > Integer.parseInt(intervalY)) {
                         checkString += intervalY + "]";
-                    } else checkString += intersectionY + "]";
+                    } else {
+                        checkString += intersectionY + "]";
+                    }
                 }
 
                 if (intervalsProcessing.validationInterval(checkString)) {
@@ -116,15 +122,16 @@ public class IntersectionsProcessing {
     }
 
     /**
-     * Method for finding the nearest number in the intersection with respect to the given.
+     * Method for finding the nearest number in the
+     * intersection with respect to the given.
      *
      * @param arrayListIntersections intersection list
      * @param enteredNumber          specified number
      * @return the nearest number
      */
-    public int getNearestNumberInIntersection(
-            ArrayList<String> arrayListIntersections,
-            int enteredNumber) {
+    public final int getNearestNumberInIntersection(
+            final ArrayList<String> arrayListIntersections,
+            final int enteredNumber) {
 
         ArrayList<Integer> arrayListNearestNumbers = new ArrayList<Integer>();
 
@@ -156,13 +163,17 @@ public class IntersectionsProcessing {
                     arrayListNearestNumbers.add(enteredNumber);
                     break;
                 } else {
-                    int distanceX = abs(Integer.parseInt(intervalX) - enteredNumber);
-                    int distanceY = abs(Integer.parseInt(intervalY) - enteredNumber);
+                    int distanceX
+                            = abs(Integer.parseInt(intervalX) - enteredNumber);
+                    int distanceY
+                            = abs(Integer.parseInt(intervalY) - enteredNumber);
                     if (distanceX >= distanceY) {
-                        arrayListNearestNumbers.add(Integer.parseInt(intervalY));
+                        arrayListNearestNumbers
+                                .add(Integer.parseInt(intervalY));
                         break;
                     } else {
-                        arrayListNearestNumbers.add(Integer.parseInt(intervalX));
+                        arrayListNearestNumbers
+                                .add(Integer.parseInt(intervalX));
                         break;
                     }
                 }
