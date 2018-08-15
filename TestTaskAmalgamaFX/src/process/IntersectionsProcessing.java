@@ -1,3 +1,5 @@
+package process;
+
 import java.util.ArrayList;
 
 import static java.lang.Math.abs;
@@ -26,7 +28,7 @@ public class IntersectionsProcessing {
      * @return intersection intervals
      */
     public final ArrayList<String> getListIntersections(
-            final ArrayList<String> arrayListIntervals) throws NullPointerException {
+            final ArrayList<String> arrayListIntervals) {
 
         removeEmptyElementFromList(arrayListIntervals);
 
@@ -125,7 +127,6 @@ public class IntersectionsProcessing {
         } else {
             throw new NullPointerException("intersection is null");
         }
-
     }
 
     /**
@@ -177,11 +178,9 @@ public class IntersectionsProcessing {
                     if (distanceX >= distanceY) {
                         arrayListNearestNumbers
                                 .add(Integer.parseInt(intervalY));
-                        break;
                     } else {
                         arrayListNearestNumbers
                                 .add(Integer.parseInt(intervalX));
-                        break;
                     }
                 }
             }

@@ -1,3 +1,5 @@
+package process;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -26,25 +28,6 @@ public class IntervalsProcessing {
             e.printStackTrace();
         }
         return arrayListIntervals;
-    }
-
-    /**
-     * Method for outputting results to the console.
-     *
-     * @param arrayListIntersections list intersections
-     * @param nearestNumber          nearest number
-     */
-    public final void printListIntervalsAndNearestNumberInIntersection(
-            final ArrayList<String> arrayListIntersections,
-            final int nearestNumber) {
-
-        System.out.println("Ближайшее число: " + nearestNumber);
-        System.out.println("Пересечения подмножеств: ");
-
-        for (String intersection : arrayListIntersections) {
-            System.out.println(intersection);
-        }
-
     }
 
     /**
