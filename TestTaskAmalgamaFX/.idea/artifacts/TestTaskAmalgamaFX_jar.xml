@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="TestTaskAmalgamaFX:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/TestTaskAmalgamaFX_jar</output-path>
-    <root id="archive" name="TestTaskAmalgamaFX.jar">
-      <element id="module-output" name="TestTaskAmalgamaFX" />
-    </root>
-  </artifact>
-</component>
