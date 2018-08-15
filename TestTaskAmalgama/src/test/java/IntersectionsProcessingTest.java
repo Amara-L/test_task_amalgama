@@ -17,6 +17,7 @@ public class IntersectionsProcessingTest {
     public final void getListIntersections() {
         ArrayList<String> arrayList = new ArrayList<String>();
         arrayList.add("[3, 20]");
+        arrayList.add("");
         arrayList.add("(-∞, 5] U [16, +∞)");
         arrayList.add("(-∞, 7] U [40, +∞)");
         assertEquals("[3, 5]", new IntersectionsProcessing()
